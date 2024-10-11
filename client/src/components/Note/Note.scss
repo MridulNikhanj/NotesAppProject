@@ -1,0 +1,42 @@
+.note{
+    padding: 25px;
+    height: 280px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    border-radius: 30px;
+}
+
+.note_text{
+    flex: 1;
+    resize: none;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.875rem;
+    outline: none;
+    border: none;
+}
+
+textarea::placeholder {
+    color: var(--lt-white);
+    opacity: 0.6; 
+  }
+
+.note_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note_footer img{
+    height: 1.6rem;
+    width: 1.6rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.note:hover .note_footer img{
+    opacity: 1;
+}
